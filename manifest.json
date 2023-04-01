@@ -1,0 +1,16 @@
+{
+  "name": "Open In New Tab",
+  "description": "Automatically open links in a new tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "js": ["scripts/links.js"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ]
+}
